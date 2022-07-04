@@ -1,0 +1,469 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Configuraciones generales del Body */
+body, body main, body .mainHistoria, body .mainDisc {
+  color: white;
+  font-size: 1rem;
+  background-image: url(../img/bg2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* Configuraciones del Header */ }
+  body header, body .mainHistoria header, body .mainDisc header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    background-image: url(../img/aniceheader.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: black; }
+    body header h1, body .mainHistoria header h1, body .mainDisc header h1 {
+      font-family: 'Times New Roman', Times, serif;
+      font-style: italic;
+      font-size: 3rem;
+      margin-bottom: 12rem;
+      padding-top: 5rem;
+      font-weight: 1000;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: ghostwhite;
+      animation-duration: 1.5s;
+      animation-name: reveal_title;
+      animation-iteration-count: infinite; }
+    body header .color-and-bg {
+      background-color: dodgerblue;
+      margin: 0px;
+      color: white; }
+    body header .menu2 {
+      text-align: center; }
+      body header .menu2 ul {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem; }
+        body header .menu2 ul li {
+          list-style: none;
+          margin-top: 1rem;
+          margin-bottom: 1rem; }
+          body header .menu2 ul li .mainMenu {
+            text-decoration: none;
+            padding: 1rem;
+            padding-left: 1.2rem;
+            padding-right: 1.2rem;
+            border: 6px solid white;
+            border-radius: 1rem;
+            font-family: 'Times New Roman', Times, serif;
+            text-transform: uppercase;
+            font-weight: 1000;
+            font-size: 1rem;
+            color: white;
+            background-color: darkblue;
+            transition: all 0.4s; }
+          body header .menu2 ul li .mainMenu:hover {
+            border: 12px solid white;
+            padding: 1.5rem;
+            padding-left: 1.8rem;
+            padding-right: 1.8rem;
+            font-size: 1.2em; }
+  body main .bootLink {
+    /* Carac de botones del Index */
+    color: white;
+    align-self: center;
+    text-align: center; }
+  body main .carouselGrid {
+    padding: 5%; }
+  body .mainTitle {
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    text-align: center;
+    font-style: italic;
+    font-weight: 1000;
+    margin: 5%;
+    margin-top: 0%;
+    padding-top: 5%; }
+  body .mainHistoria {
+    /* Caracteristicas del Main Historia */
+    padding: 0.8rem;
+    display: grid;
+    grid-template-areas: "histTitle histTitle histTitle"  "text1 text1 text1" "img1 img1 img1" "text2 text2 text2" "img2 img2 img2" "text3 text3 text3" "img3 img3 img3" "text4 text4 text4" "img4 img4 img4" "text5 text5 text5" "img5 img5 img5" "text6 text6 text6" "img6 img6 img6" "text7 text7 text7" "img7 img7 img7" "text8 text8 text8" "img8 img8 img8" "text9 text9 text9" "img9 img9 img9" "text10 text10 text10" "img10 img10 img10";
+    row-gap: 1rem;
+    background-image: url("../img/bg2-desen.jpg"); }
+    body .mainHistoria .histImg {
+      border-radius: 1rem;
+      border-style: groove;
+      margin: 0px;
+      width: 100%;
+      height: 100%;
+      justify-self: center; }
+    body .mainHistoria .histText {
+      margin: 0.3rem;
+      font-size: 1.1rem;
+      text-align: justify; }
+    body .mainHistoria #histTitle {
+      grid-area: histTitle;
+      justify-self: center; }
+    body .mainHistoria #text1 {
+      grid-area: text1;
+      align-self: center; }
+    body .mainHistoria #text2 {
+      grid-area: text2;
+      align-self: center; }
+    body .mainHistoria #text3 {
+      grid-area: text3;
+      align-self: center; }
+    body .mainHistoria #text4 {
+      grid-area: text4;
+      align-self: center; }
+    body .mainHistoria #text5 {
+      grid-area: text5;
+      align-self: center; }
+    body .mainHistoria #text6 {
+      grid-area: text6;
+      align-self: center; }
+    body .mainHistoria #text7 {
+      grid-area: text7;
+      align-self: center; }
+    body .mainHistoria #text8 {
+      grid-area: text8;
+      align-self: center; }
+    body .mainHistoria #text9 {
+      grid-area: text9;
+      align-self: center; }
+    body .mainHistoria #text10 {
+      grid-area: text10;
+      align-self: center; }
+    body .mainHistoria #img1 {
+      grid-area: img1;
+      justify-self: center;
+      align-self: center;
+      margin-left: 2rem;
+      margin-right: 2rem; }
+    body .mainHistoria #img2 {
+      grid-area: img2;
+      justify-self: center;
+      align-self: center;
+      margin-left: 2rem;
+      margin-right: 2rem; }
+    body .mainHistoria #img3 {
+      grid-area: img3;
+      justify-self: center;
+      align-self: center;
+      margin-left: 2rem;
+      margin-right: 2rem; }
+    body .mainHistoria #img4 {
+      grid-area: img4;
+      justify-self: center;
+      align-self: center;
+      margin-left: 2rem;
+      margin-right: 2rem; }
+    body .mainHistoria #img5 {
+      grid-area: img5;
+      justify-self: center;
+      align-self: center;
+      margin-left: 2rem;
+      margin-right: 2rem; }
+    body .mainHistoria #img6 {
+      grid-area: img6;
+      justify-self: center;
+      align-self: center;
+      margin-left: 2rem;
+      margin-right: 2rem; }
+    body .mainHistoria #img7 {
+      grid-area: img7;
+      justify-self: center;
+      align-self: center;
+      margin-left: 2rem;
+      margin-right: 2rem; }
+    body .mainHistoria #img8 {
+      grid-area: img8;
+      justify-self: center;
+      align-self: center;
+      margin-left: 2rem;
+      margin-right: 2rem; }
+    body .mainHistoria #img9 {
+      grid-area: img9;
+      justify-self: center;
+      align-self: center;
+      margin-left: 2rem;
+      margin-right: 2rem; }
+    body .mainHistoria #img10 {
+      grid-area: img10;
+      justify-self: center;
+      align-self: center;
+      margin-left: 2rem;
+      margin-right: 2rem; }
+  body .mainDisc {
+    background-image: url("../img/bg2-desen.jpg");
+    display: grid;
+    grid-template-areas: "dTitle" "discTitle1" "discImg1" "discText1"  "discLink1" "discTitle2" "discImg2" "discText2"  "discLink2" "discTitle3" "discImg3" "discText3"  "discLink3" "discTitle4" "discImg4" "discText4"  "discLink4" "discTitle5" "discImg5" "discText5"  "discLink5" "discTitle6" "discImg6" "discText6"  "discLink6";
+    justify-content: center;
+    justify-items: center;
+    row-gap: 1rem;
+    font-size: 16px; }
+    body .mainDisc .discImage {
+      margin: 0px;
+      width: 100%;
+      justify-self: center; }
+    body .mainDisc .discSubtitle {
+      text-align: center;
+      font-style: italic;
+      font-size: 1.5rem;
+      width: 100%; }
+    body .mainDisc .discText {
+      text-align: center;
+      margin: 5%;
+      font-size: 1.2em; }
+    body .mainDisc .discLink {
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      display: flex;
+      padding: 3px;
+      font-size: 1em;
+      border: 2px solid white;
+      border-bottom: 4px solid white;
+      border-left: 4px solid white;
+      border-radius: 20px;
+      transition: all 0.4s; }
+    body .mainDisc .discLink:hover {
+      border-bottom: 8px solid white;
+      border-left: 8px solid white;
+      transform: translate(4px, -4px);
+      margin: -2px; }
+    body .mainDisc .discLink:active {
+      border-bottom: 2px solid white;
+      border-left: 2px solid white;
+      margin: 0.8px;
+      transform: translate(-2px, 2px); }
+    body .mainDisc .discImgAjust {
+      margin-left: 10%;
+      margin-right: 10%;
+      align-self: center; }
+    body .mainDisc #dTitle {
+      grid-area: dTitle; }
+    body .mainDisc #discTitle1 {
+      grid-area: discTitle1;
+      margin-left: 3%;
+      margin-right: 3%; }
+    body .mainDisc #discTitle2 {
+      grid-area: discTitle2;
+      margin-left: 3%;
+      margin-right: 3%; }
+    body .mainDisc #discTitle3 {
+      grid-area: discTitle3;
+      margin-left: 3%;
+      margin-right: 3%; }
+    body .mainDisc #discTitle4 {
+      grid-area: discTitle4;
+      margin-left: 3%;
+      margin-right: 3%; }
+    body .mainDisc #discTitle5 {
+      grid-area: discTitle5;
+      margin-left: 3%;
+      margin-right: 3%; }
+    body .mainDisc #discTitle6 {
+      grid-area: discTitle6;
+      margin-left: 3%;
+      margin-right: 3%; }
+    body .mainDisc #discLink1 {
+      grid-area: discLink1;
+      text-align: center;
+      margin: 5%; }
+    body .mainDisc #discLink2 {
+      grid-area: discLink2;
+      text-align: center;
+      margin: 5%; }
+    body .mainDisc #discLink3 {
+      grid-area: discLink3;
+      text-align: center;
+      margin: 5%; }
+    body .mainDisc #discLink4 {
+      grid-area: discLink4;
+      text-align: center;
+      margin: 5%; }
+    body .mainDisc #discLink5 {
+      grid-area: discLink5;
+      text-align: center;
+      margin: 5%; }
+    body .mainDisc #discLink6 {
+      grid-area: discLink6;
+      text-align: center;
+      margin: 5%; }
+    body .mainDisc #discImg1 {
+      grid-area: discImg1; }
+    body .mainDisc #discImg2 {
+      grid-area: discImg2; }
+    body .mainDisc #discImg3 {
+      grid-area: discImg3; }
+    body .mainDisc #discImg4 {
+      grid-area: discImg4; }
+    body .mainDisc #discImg5 {
+      grid-area: discImg5; }
+    body .mainDisc #discImg6 {
+      grid-area: discImg6; }
+    body .mainDisc #discText1 {
+      grid-area: discText1; }
+    body .mainDisc #discText2 {
+      grid-area: discText2; }
+    body .mainDisc #discText3 {
+      grid-area: discText3; }
+    body .mainDisc #discText4 {
+      grid-area: discText4; }
+    body .mainDisc #discText5 {
+      grid-area: discText5; }
+    body .mainDisc #discText6 {
+      grid-area: discText6; }
+  body .table {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 1.25rem; }
+    body .table .eventName {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: bold; }
+    body .table .eventNameDesktop {
+      font-weight: 1000;
+      font-size: 1.5em; }
+    body .table .location {
+      text-align: end; }
+  body .form {
+    padding: 5%; }
+    body .form .buttonForm {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      padding-bottom: 5%; }
+      body .form .buttonForm .buttonGrid {
+        padding: 3px;
+        border: 4px solid;
+        border-left: 8px solid;
+        border-bottom: 8px solid;
+        border-radius: 1rem;
+        transition: all 0.4s; }
+      body .form .buttonForm .buttonGrid:hover {
+        border-bottom: 12px solid black;
+        border-left: 12px solid black;
+        transform: translate(4px, -4px);
+        margin: -2px; }
+      body .form .buttonForm .buttonGrid:active {
+        border-bottom: 4px solid black;
+        border-left: 4px solid black;
+        transform: translate(-2px, 2px);
+        margin: 0.8px;
+        background-color: lightgrey; }
+
+footer {
+  background-color: #232323;
+  background-image: url("../img/amlogo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0.5rem; }
+  footer h4 {
+    font-size: 1rem; }
+  footer .footerLink {
+    font-size: 0.8rem;
+    padding: 0.4rem;
+    padding-top: 0.6rem;
+    color: white;
+    text-decoration: none; }
+
+@media screen and (max-width: 600px) {
+  .eventNameDesktop {
+    display: none; } }
+
+@media screen and (max-width: 899px) {
+  .menu2 {
+    display: none; } }
+
+@media screen and (min-width: 600px) {
+  /* caracteristicas del titulo */
+  .title {
+    font-size: 4rem;
+    margin-top: 3rem;
+    font-weight: 1500; }
+  h1 {
+    font-size: 4rem;
+    margin-top: 3rem;
+    font-weight: 1500; }
+  /* Caracteristicas del Main */
+  main {
+    font-size: 1.25rem; }
+  .mainHistoria {
+    display: grid;
+    grid-template-areas: "histTitle histTitle histTitle"  "img1 text1 text1" "text2 text2 img2" "img3 text3 text3" "text4 text4 img4" "img5 text5 text5" "text6 text6 img6" "img7 text7 text7" "text8 text8 img8" "img9 text9 text9" "text10 text10 img10";
+    row-gap: 1em; }
+  .histImg {
+    display: flex;
+    flex-direction: column; }
+  .histText {
+    display: flex;
+    flex-direction: column; }
+  .mainDisc {
+    display: grid;
+    grid-template-areas: "dTitle dTitle" "discTitle1 discTitle1" "discImg1 discText1" "discLink1 discLink1" "discTitle2 discTitle2" "discImg2 discText2" "discLink2 discLink2" "discTitle3 discTitle3" "discImg3 discText3" "discLink3 discLink3" "discTitle4 discTitle4" "discImg4 discText4" "discLink4 discLink4" "discTitle5 discTitle5" "discImg5 discText5" "discLink5 discLink5" "discTitle6 discTitle6" "discImg6 discText6" "discLink6 discLink6";
+    justify-content: center;
+    justify-items: Center;
+    grid-template-columns: 1.5fr 2fr;
+    font-size: 1.25rem; }
+  .discText {
+    text-align: start; }
+  .mainEvent {
+    font-size: 1.25rem; }
+  .eventName {
+    display: none; }
+  footer {
+    font-size: 1.25rem; }
+  .fs-c {
+    font-size: 1rem; } }
+
+@media screen and (min-width: 900px) {
+  main {
+    font-size: 1.5rem; }
+  .navbar {
+    display: none; }
+  .mainHistoria {
+    border-radius: 2rem;
+    border-style: solid;
+    border-color: gray;
+    padding: 2rem;
+    margin: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem; }
+  .mainDisc {
+    border-radius: 2rem;
+    border-style: solid;
+    border-color: gray;
+    padding: 2rem;
+    margin: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem; }
+  footer {
+    font-size: 1.5rem; }
+  .fs-c {
+    font-size: 1.25rem; } }
+
+@media screen and (min-width: 1100px) {
+  .mainHistoria {
+    width: 1068px;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    justify-self: center; }
+  .mainDisc {
+    width: 1068px;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    justify-self: center; } }

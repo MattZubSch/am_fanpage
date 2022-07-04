@@ -1,0 +1,341 @@
+//Configuracion de Estilos con SASS
+
+//imports
+
+@import "utilities/variables";
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuraciones generales del Body */ 
+body{
+    color: $color-p-letra;
+    font-size: $tamano-letra;
+    background-image: url(../img/bg2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* Configuraciones del Header */
+    header{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        text-align: center;
+        background-image: url(../img/aniceheader.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        color: $color-secundario;
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: map-get($estilos-titulos, titulo-header);
+            margin-bottom: 12rem;
+            padding-top: 5rem;
+            font-weight: 1000;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: ghostwhite;
+            animation-duration: 1.5s;
+            animation-name: reveal_title;
+            animation-iteration-count:infinite;
+        }
+        .color-and-bg{
+            background-color:dodgerblue;
+            margin: 0px;
+            color: $color-p-letra;
+        }
+        .menu2{
+            text-align: center;
+            ul{
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                margin-bottom: 2rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                li{
+                    list-style: none;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    .mainMenu{
+                        text-decoration: none;
+                        padding: 1rem;
+                        padding-left: 1.2rem;
+                        padding-right: 1.2rem;
+                        border: 6px solid $color-p-letra;
+                        border-radius: 1rem;
+                        font-family: 'Times New Roman', Times, serif;
+                        text-transform: uppercase;
+                        font-weight: 1000;
+                        font-size: $tamano-letra;
+                        color: $color-p-letra;
+                        background-color: $bg-nav;
+                        transition: all $transiciones;
+                    }
+                    .mainMenu:hover{
+                        border: 12px solid white;
+                        padding: 1.5rem;
+                        padding-left: 1.8rem;
+                        padding-right: 1.8rem;
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+    }
+    main{
+        @extend body;
+        .bootLink{
+            /* Carac de botones del Index */
+            color: white;
+            align-self: center;
+            text-align: center;
+        }
+        .carouselGrid{
+            padding: 5%;
+        }
+      
+    }
+    .mainTitle{
+        font-family: 'Times New Roman', Times, serif;
+        text-transform: uppercase;
+        font-size: map-get($estilos-titulos, titulo-princ);
+        text-align: center;
+        font-style: italic;
+        font-weight: 1000;
+        margin: 5%;
+        margin-top: 0%;
+        padding-top: 5%;
+    }
+    .mainHistoria{
+        /* Caracteristicas del Main Historia */
+        padding: 0.8rem;
+        display: grid;
+        grid-template-areas: "histTitle histTitle histTitle" 
+                             "text1 text1 text1"
+                             "img1 img1 img1"
+                             "text2 text2 text2"
+                             "img2 img2 img2"
+                             "text3 text3 text3"
+                             "img3 img3 img3"
+                             "text4 text4 text4"
+                             "img4 img4 img4"
+                             "text5 text5 text5"
+                             "img5 img5 img5"
+                             "text6 text6 text6"
+                             "img6 img6 img6"
+                             "text7 text7 text7"
+                             "img7 img7 img7"
+                             "text8 text8 text8"
+                             "img8 img8 img8"
+                             "text9 text9 text9"
+                             "img9 img9 img9"
+                             "text10 text10 text10"
+                             "img10 img10 img10";
+        row-gap: 1rem;    
+        @extend body;
+        background-image: url('../img/bg2-desen.jpg');
+        .histImg{
+            border-radius: 1rem;
+            border-style: groove;
+            margin: 0px;
+            width: $tamano-imagen;
+            height: $tamano-imagen;
+            justify-self: center;
+        }
+        .histText{
+            margin: 0.3rem;
+            font-size: $tamano-letra * 1.1;
+            text-align: justify;
+        }
+        #histTitle{
+            grid-area: histTitle;
+            justify-self: center;
+        }
+        @each $text, $grid in $grid-hist-text {
+            ##{$grid} {
+                grid-area: $grid;
+                @include hist-text;
+            }
+        }
+        @each $img, $grid in $grid-hist-img {
+            ##{$grid} {
+                grid-area: $grid;
+                @include hist-img;
+            }
+        }
+    }
+    .mainDisc{
+        @extend body;
+        background-image: url('../img/bg2-desen.jpg');
+        display: grid;
+        grid-template-areas: "dTitle"
+                             "discTitle1"
+                             "discImg1"
+                             "discText1" 
+                             "discLink1"
+                             "discTitle2"
+                             "discImg2"
+                             "discText2" 
+                             "discLink2"
+                             "discTitle3"
+                             "discImg3"
+                             "discText3" 
+                             "discLink3"
+                             "discTitle4"
+                             "discImg4"
+                             "discText4" 
+                             "discLink4"
+                             "discTitle5"
+                             "discImg5"
+                             "discText5" 
+                             "discLink5"
+                             "discTitle6"
+                             "discImg6"
+                             "discText6" 
+                             "discLink6";
+        justify-content: center;
+        justify-items: center;
+        row-gap: 1rem;
+        font-size: 16px; 
+        .discImage{
+            margin: 0px;
+            width: 100%;
+            justify-self: center;
+        }
+        .discSubtitle{
+            text-align: center;
+            font-style: italic;
+            font-size: map-get($map: $estilos-titulos, $key: titulo-sec);
+            width: 100%;
+        }
+        .discText{
+            text-align: center;
+            margin: 5%;
+            font-size: 1.2em;
+        }
+        .discLink{
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            display: flex;
+            padding: 3px;
+            font-size: 1em;
+            border: 2px solid white;
+            border-bottom: 4px solid white;
+            border-left: 4px solid white;
+            border-radius: 20px;
+            transition: all 0.4s; 
+        }
+        .discLink:hover{
+            border-bottom: 8px solid white;
+            border-left: 8px solid white;
+            transform: translate(4px, -4px);
+            margin: -2px;
+        }
+        .discLink:active{
+            border-bottom: 2px solid white;
+            border-left: 2px solid white;
+            margin: 0.8px;
+            transform: translate(-2px, 2px);
+        }
+        .discImgAjust{
+            margin-left: 10%;
+            margin-right: 10%;
+            align-self: center;
+        }
+        #dTitle{
+            grid-area: dTitle;
+        }
+        @each $title, $grid in $grid-disc-title {
+            ##{$grid} {
+                grid-area: $grid;
+                @include disc-title;
+            }
+        }
+        @each $link, $grid in $grid-disc-link {
+            ##{$grid} {
+            grid-area: $grid;
+            @include disc-link;
+            }
+        }
+        @each $rest, $grid in $grid-disc-img-text {
+            ##{$grid} {
+                grid-area: $grid;
+            }
+        }
+    }
+    .table{
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-size: $tamano-letra * 1.25;
+        .eventName{
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .eventNameDesktop{
+            font-weight: 1000;
+            font-size: 1.5em;
+        }
+        .location{
+            text-align: end;
+        }
+    }
+    .form{
+        padding: 5%;
+        .buttonForm{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            padding-bottom: 5%;
+            .buttonGrid{
+                padding: 3px;
+                border: 4px solid;
+                border-left: 8px solid;
+                border-bottom: 8px solid;
+                border-radius: 1rem;
+                transition: all 0.4s;
+            }
+            .buttonGrid:hover{
+                border-bottom: 12px solid black;
+                border-left: 12px solid black;
+                transform: translate(4px, -4px);
+                margin: -2px;
+            }
+            .buttonGrid:active{
+                border-bottom: 4px solid black;
+                border-left: 4px solid black;
+                transform: translate(-2px, 2px);
+                margin: 0.8px;
+                background-color: lightgrey;
+            }
+        }
+    }
+
+}
+
+footer{
+    background-color: $color-footer;
+    background-image: url('../img/amlogo.png');
+    @include backgrounds;
+    padding: 0.5rem;
+    h4{
+        font-size: $tamano-letra;
+     }
+    .footerLink{
+        font-size: $tamano-letra * 0.8;
+        padding: 0.4rem;
+        padding-top: 0.6rem;
+        color: $color-p-letra;
+        text-decoration: none;
+    }
+}
+
+@import "utilities/media-queries"

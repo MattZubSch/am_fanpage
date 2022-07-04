@@ -1,0 +1,169 @@
+//media queries
+
+@import "utilities/variables";
+
+@media screen and (max-width:600px){
+    .eventNameDesktop{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:899px){
+    .menu2{
+        display: none;
+    }
+}
+
+@media screen and (min-width:600px){
+    /* caracteristicas del titulo */
+    .title{
+        font-size: $tamano-letra * 4;
+        margin-top: 3rem;
+        font-weight: 1500;
+    }
+    h1{
+        font-size: $tamano-letra * 4;
+        margin-top: 3rem;
+        font-weight: 1500;
+    } 
+    /* Caracteristicas del Main */
+    main{
+        font-size: $tamano-letra * 1.25;
+    }
+    .mainHistoria{
+        display: grid;
+        grid-template-areas: "histTitle histTitle histTitle" 
+                             "img1 text1 text1"
+                             "text2 text2 img2"
+                             "img3 text3 text3"
+                             "text4 text4 img4"
+                             "img5 text5 text5"
+                             "text6 text6 img6"
+                             "img7 text7 text7"
+                             "text8 text8 img8"
+                             "img9 text9 text9"
+                             "text10 text10 img10"; 
+        row-gap: 1em; 
+    }  
+    .histImg{
+        display: flex;
+        flex-direction: column;
+    }
+    .histText{
+        display: flex;
+        flex-direction: column;
+    }
+    $margin-hist: 1rem;
+    // #img1{
+    //     margin-left: $margin-hist * 0.5;
+    //     margin-right: $margin-hist * 0.5;
+    // }
+    // #img2{
+    //     margin-left: $margin-hist * 0.5;
+    //     margin-right: $margin-hist * 0.5;
+    // }
+    // #img3{
+    //     margin-left: $margin-hist * 0.5;
+    //     margin-right: $margin-hist * 0.5;
+    // }
+    // #img4{
+    //     margin-left: $margin-hist * 0.5;
+    //     margin-right: $margin-hist * 0.5;
+    // }
+    // #img5{
+    //     margin-left: $margin-hist * 0.5;
+    //     margin-right: $margin-hist * 0.5;
+    // }
+    // #img6{
+    //     margin-left: $margin-hist * 0.5;
+    //     margin-right: $margin-hist * 0.5;
+    // }
+    // #img7{
+    //     margin-left: $margin-hist * 0.5;
+    //     margin-right: $margin-hist * 0.5;
+    // }
+    // #img8{
+    //     margin-left: $margin-hist * 0.5;
+    //     margin-right: $margin-hist * 0.5;
+    // }
+    // #img9{
+    //     margin-left: $margin-hist * 0.5;
+    //     margin-right: $margin-hist * 0.5;
+    // }   
+    // #img10{
+    //     margin-left: $margin-hist * 0.5;
+    //     margin-right: $margin-hist * 0.5;
+    // }
+    .mainDisc{
+        display: grid;
+        grid-template-areas: "dTitle dTitle"
+                             "discTitle1 discTitle1"
+                             "discImg1 discText1"
+                             "discLink1 discLink1"
+                             "discTitle2 discTitle2"
+                             "discImg2 discText2"
+                             "discLink2 discLink2"
+                             "discTitle3 discTitle3"
+                             "discImg3 discText3"
+                             "discLink3 discLink3"
+                             "discTitle4 discTitle4"
+                             "discImg4 discText4"
+                             "discLink4 discLink4"
+                             "discTitle5 discTitle5"
+                             "discImg5 discText5"
+                             "discLink5 discLink5"
+                             "discTitle6 discTitle6"
+                             "discImg6 discText6"
+                             "discLink6 discLink6";
+        justify-content: center;
+        justify-items: Center;
+        grid-template-columns: 1.5fr 2fr;
+        font-size: $tamano-letra * 1.25;
+    }
+    .discText{
+        text-align: start;
+    }
+    .mainEvent{
+        font-size: $tamano-letra * 1.25;
+    }
+    .eventName{
+        display: none;
+    }
+    footer{
+        font-size: $tamano-letra * 1.25;
+    }
+    .fs-c{
+        font-size: $tamano-letra;
+    }
+}
+
+@media screen and (min-width:900px){
+    main{
+        font-size: $tamano-letra * 1.5;
+    }
+    .navbar{
+        display: none;
+    }
+    .mainHistoria{
+        @include main-tablet
+    }
+    .mainDisc{
+        @include main-tablet
+    }
+    footer{
+        font-size: $tamano-letra * 1.5;
+    }
+    .fs-c{
+        font-size: $tamano-letra * 1.25;
+    }
+}
+
+@media screen and (min-width:1100px){
+    .mainHistoria{
+        @include main-desktop
+    }
+    .mainDisc{
+        @include main-desktop
+    }
+}

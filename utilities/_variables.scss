@@ -1,0 +1,142 @@
+//Variables
+
+//fonts: 
+
+$tamano-letra: 1rem;
+$color-p-letra: white;
+$color-secundario: black;
+
+$transiciones: 0.4s;
+
+$bg-nav: darkblue;
+
+$color-footer: rgb(35,35,35);
+
+$tamano-imagen: 100%;
+
+$margin-hist: 2rem;
+
+$estilos-titulos: (
+    titulo-header: 3rem,
+    titulo-princ: 2.5rem,
+    titulo-sec: 1.5rem
+);
+
+//map grid historia
+
+@mixin hist-text{
+    align-self: center;
+}
+
+$grid-hist-text: (
+    text1: text1,
+    text2: text2,
+    text3: text3,
+    text4: text4,
+    text5: text5,
+    text6: text6,
+    text7: text7,
+    text8: text8,
+    text9: text9,
+    text10: text10
+);
+
+@mixin hist-img {
+    justify-self: center;
+    align-self: center;
+    margin-left: $margin-hist;
+    margin-right: $margin-hist;
+}
+
+$grid-hist-img: (
+    img1: img1,
+    img2: img2,
+    img3: img3,
+    img4: img4,
+    img5: img5,
+    img6: img6,
+    img7: img7,
+    img8: img8,
+    img9: img9,
+    img10: img10
+);
+
+
+//map grid discografia
+
+
+@mixin disc-title{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+@mixin disc-link{
+    text-align: center;
+    margin: 5%;
+}
+
+
+
+$grid-disc-title: (//caracteristicas de cada grid
+    title1: discTitle1,
+    title2: discTitle2,
+    title3: discTitle3,
+    title4: discTitle4,
+    title5: discTitle5,
+    title6: discTitle6
+    
+);
+
+$grid-disc-link:(
+    link1: discLink1,
+    link2: discLink2,
+    link3: discLink3,
+    link4: discLink4,
+    link5: discLink5,
+    link6: discLink6
+);
+
+$grid-disc-img-text: (
+    img1: discImg1,
+    img2: discImg2,
+    img3: discImg3,
+    img4: discImg4,
+    img5: discImg5,
+    img6: discImg6,
+    text1: discText1,
+    text2: discText2,
+    text3: discText3,
+    text4: discText4,
+    text5: discText5,
+    text6: discText6
+);
+
+
+
+
+//mixin fondos
+
+@mixin backgrounds {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+@mixin main-tablet {
+    border-radius: 2rem;
+    border-style: solid;
+    border-color: gray;
+    padding: 2rem;
+    margin: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+@mixin main-desktop {
+    width: 1068px;
+        margin: auto;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        justify-self: center;
+}

@@ -1,0 +1,314 @@
+.title{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 3em;
+    margin: 5rem;
+    margin-bottom: 12rem;
+    font-weight: 1000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: ghostwhite;
+    animation-duration: 1.5s;
+    animation-name: reveal_title;
+    animation-iteration-count:infinite;
+}
+
+/* Caracteristicas de los titulos del main */
+.mainTitle{
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    text-align: center;
+    font-style: italic;
+    font-weight: 1000;
+    margin: 5%;
+    margin-top: 0%;
+    padding-top: 5%;
+}
+
+
+/* Main discografia */
+
+.mainDisc{
+    background-image: url('../img/bg2-desen.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-areas: "dTitle"
+                         "discTitle1"
+                         "discImg1"
+                         "discText1" 
+                         "discLink1"
+                         "discTitle2"
+                         "discImg2"
+                         "discText2" 
+                         "discLink2"
+                         "discTitle3"
+                         "discImg3"
+                         "discText3" 
+                         "discLink3"
+                         "discTitle4"
+                         "discImg4"
+                         "discText4" 
+                         "discLink4"
+                         "discTitle5"
+                         "discImg5"
+                         "discText5" 
+                         "discLink5"
+                         "discTitle6"
+                         "discImg6"
+                         "discText6" 
+                         "discLink6";
+    justify-content: center;
+    justify-items: center;
+    row-gap: 1rem;
+    font-size: 16px;
+}
+
+.discImage{
+    margin: 0px;
+    width: 100%;
+    justify-self: center;
+}
+
+.discSubtitle{
+    text-align: center;
+    font-style: italic;
+    font-size: 1.5em;
+    width: 100%;
+}
+
+.discText{
+    text-align: center;
+    margin: 5%;
+    font-size: 1.2em;
+}
+
+.discLink{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    padding: 3px;
+    font-size: 1em;
+    border: 2px solid white;
+    border-bottom: 4px solid white;
+    border-left: 4px solid white;
+    border-radius: 20px;
+    transition: all 0.4s;
+    
+}
+
+.discLink:hover{
+    border-bottom: 8px solid white;
+    border-left: 8px solid white;
+    transform: translate(4px, -4px);
+    margin: -2px;
+}
+
+.discLink:active{
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    margin: 0.8px;
+    transform: translate(-2px, 2px);
+}
+
+
+.discImgAjust{
+    margin-left: 10%;
+    margin-right: 10%;
+    align-self: center;
+}
+
+#dTitle{
+    grid-area: dTitle;
+}
+
+#discTitle1{
+    grid-area: discTitle1;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#discImg1{
+    grid-area: discImg1;
+}
+
+#discText1{
+    grid-area: discText1;
+}
+
+#discLink1{
+    grid-area: discLink1;
+    text-align: center;
+    margin: 5%;
+}
+
+
+#discTitle2{
+    grid-area: discTitle2;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#discImg2{
+    grid-area: discImg2;
+}
+
+#discText2{
+    grid-area: discText2;
+}
+
+#discLink2{
+    grid-area: discLink2;
+    text-align: center;
+    margin: 5%;
+}
+
+
+#discTitle3{
+    grid-area: discTitle3;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#discImg3{
+    grid-area: discImg3;
+}
+
+#discText3{
+    grid-area: discText3;
+}
+
+#discLink3{
+    grid-area: discLink3;
+    text-align: center;
+    margin: 5%;
+}
+
+
+#discTitle4{
+    grid-area: discTitle4;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#discImg4{
+    grid-area: discImg4;
+}
+
+#discText4{
+    grid-area: discText4;
+}
+
+#discLink4{
+    grid-area: discLink4;
+    text-align: center;
+    margin: 5%;
+}
+
+
+#discTitle5{
+    grid-area: discTitle5;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#discImg5{
+    grid-area: discImg5;
+}
+
+#discText5{
+    grid-area: discText5;
+}
+
+#discLink5{
+    grid-area: discLink5;
+    text-align: center;
+    margin: 5%;
+}
+
+
+#discTitle6{
+    grid-area: discTitle6;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#discImg6{
+    grid-area: discImg6;
+}
+
+#discText6{
+    grid-area: discText6;
+}
+
+#discLink6{
+    grid-area: discLink6;
+    text-align: center;
+    margin: 5%;
+}
+
+/* Caractetisticas de la pestaña Eventos */
+
+
+.table{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 1.25rem;
+}
+
+.eventName{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.eventNameDesktop{
+    font-weight: 1000;
+    font-size: 1.5em;
+}
+
+.location{
+    text-align: end;
+}
+
+/* Caracteristicas del formulario de Contacto */
+
+.form{
+    padding: 5%;
+}
+
+.buttonForm{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 5%;
+}
+
+.buttonGrid{
+    padding: 3px;
+    border: 4px solid;
+    border-left: 8px solid;
+    border-bottom: 8px solid;
+    border-radius: 1rem;
+    transition: all 0.4s;
+}
+
+.buttonGrid:hover{
+    border-bottom: 12px solid black;
+    border-left: 12px solid black;
+    transform: translate(4px, -4px);
+    margin: -2px;
+}
+
+.buttonGrid:active{
+    border-bottom: 4px solid black;
+    border-left: 4px solid black;
+    transform: translate(-2px, 2px);
+    margin: 0.8px;
+    background-color: lightgrey;
+}
